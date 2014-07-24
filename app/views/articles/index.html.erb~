@@ -11,7 +11,7 @@
 	<br>
 	<%= article.text %>
 	<br>
-        Email: <%= article.user.email %>
+        Email: <%= article.user_id %>
 	</td>
    
       </tr>

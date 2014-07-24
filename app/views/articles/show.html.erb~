@@ -8,7 +8,7 @@
   <dd><%= @article.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:body) %>:</strong></dt>
   <dd><%= @article.text %></dd>
-  <dt><strong>Email: </strong></dt>
+  <dt><strong>email: </strong></dt>
   <dd><%= @article.user.email %></dd>
 </dl>
 
