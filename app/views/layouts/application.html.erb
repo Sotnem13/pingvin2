@@ -50,7 +50,14 @@
           <a class="brand" href="/">Pingvin</a>
           <div class="container nav-collapse">
             <ul class="nav">
-		 </ul>
+		<% if user_signed_in? %>
+		<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete  %></li>
+		<li> <%= link_to current_user.email, "#" %></li>
+		<% else %>
+              	<li><%= link_to "Sign up", "/users/sign_up"  %></li>
+              	<li><%= link_to "Sign in", "/users/sign_in"  %></li>
+		<% end %>
+            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -73,7 +80,8 @@
             <div class="well sidebar-nav">
               <center><h3>About us</h3></center>
               <ul class="nav nav-list">
-			fsdffsdfsdfsfsf
+			For a long time we tried to create this blog, howether we've done it! And we can be proud of this achievment! :)
+
               </ul>
             </div><!--/.well -->
           </div><!--/span-->

@@ -11,7 +11,8 @@
 	<br>
 	<%= article.text %>
 	<br>
-        </td>
+        Email: <%= article.user.email %>
+	</td>
    
       </tr>
     <% end %>
